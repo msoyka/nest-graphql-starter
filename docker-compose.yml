@@ -10,7 +10,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: password123
-      POSTGRES_DB: lifeline_db
+      POSTGRES_DB: nest-graphql-starter-db
 
 volumes:
   data:
