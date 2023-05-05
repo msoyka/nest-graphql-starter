@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  findAllUsers: [User!]!
+  user(id: ID!): User!
+}
+
+type User {
+  id: Float!
+  name: String!
+}
