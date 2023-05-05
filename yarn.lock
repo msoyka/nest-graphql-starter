@@ -1390,6 +1390,11 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
+"@pothos/core@^3.30.0":
+  version "3.30.0"
+  resolved "https://registry.yarnpkg.com/@pothos/core/-/core-3.30.0.tgz#76f8f9cd23fc21b37389e805150638435129039e"
+  integrity sha512-ZUL2YTv3ODeKBkhkVcEO03lcERdqQaG2zfylNpkrY9ryAIhOuN9Pbo+VnfqhqEQx7jM/56Rro7i9AuhzF0Q3tA==
+
 "@prisma/client@^4.13.0":
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.13.0.tgz#271d2b9756503ea17bbdb459c7995536cf2a6191"

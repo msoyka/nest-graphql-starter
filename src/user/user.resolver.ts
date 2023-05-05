@@ -1,3 +1,4 @@
+// https://www.tomray.dev/nestjs-prisma#graphql-in-nestjs-with-prisma
 import { Resolver, Query, Args, ID } from '@nestjs/graphql';
 import { User } from './models/user.model';
 import { ParseIntPipe } from '@nestjs/common';
