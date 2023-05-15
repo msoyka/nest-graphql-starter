@@ -1,20 +1,22 @@
-import { join } from 'path';
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 
 import { PrismaModule } from './prisma/prisma.module';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import {
+  PothosApolloDriver,
+  PothosApolloDriverConfig,
+} from './pothos/utils/pothos.driver';
+import { PothosModule } from './pothos/pothos.module';
 
 @Module({
   imports: [
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-      sortSchema: true,
-    }),
     PrismaModule,
+    PothosModule,
+    GraphQLModule.forRoot<PothosApolloDriverConfig>({
+      driver: PothosApolloDriver,
+    }),
     UserModule,
     AuthModule,
   ],

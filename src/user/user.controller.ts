@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { UserService } from './user.service';
-import { UserDto } from './dto/user.dto';
+// import { UserDto } from './dto/user.dto';
 import { JwtAuthGuard } from 'src/auth/guards/jwt.guard';
 
 @Controller('user')
@@ -21,7 +21,7 @@ export class UserController {
 
   // WRITE
   @Post()
-  createOrderPromotionEntry(@Body() userDto: UserDto) {
+  createOrderPromotionEntry(@Body() userDto: any) {
     return this.userService.create(userDto);
   }
 }

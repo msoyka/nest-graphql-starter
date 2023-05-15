@@ -5,8 +5,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
-generator nexusPrisma {
-  provider = "nexus-prisma"
+generator pothos {
+  provider = "prisma-pothos-types"
 }
 
 datasource db {
