@@ -29,6 +29,8 @@ export class PothosService {
       prisma: { client: this.prisma },
     });
 
+    // Initialize an empty Query {} and Mutation{} type in our SDL schema.
     this.builder.queryType({});
+    this.builder.mutationType({});
   }
 }

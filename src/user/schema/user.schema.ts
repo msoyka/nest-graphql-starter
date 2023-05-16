@@ -50,7 +50,7 @@ export class UserSchema {
     // TODO: TURN THESE INTO DECORATORS
     // Add User Query
     this.pothosService.builder.queryFields((t) => ({
-      user: t.field({
+      getUser: t.field({
         type: User,
         resolve: () =>
           new User(
@@ -58,6 +58,20 @@ export class UserSchema {
             'Smith',
             'JSmith',
             'jsmith@gmail.com',
+            new Date(Date.UTC(2012, 11, 12)),
+          ),
+      }),
+    }));
+
+    this.pothosService.builder.mutationFields((t) => ({
+      user: t.field({
+        type: User,
+        resolve: () =>
+          new User(
+            'John',
+            'Smith2',
+            'JSmith2',
+            'jsmith2@gmail.com',
             new Date(Date.UTC(2012, 11, 12)),
           ),
       }),
