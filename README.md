@@ -71,3 +71,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Resources
+- [Prisma / Pothos Integration Docs](https://www.prisma.io/blog/e2e-type-safety-graphql-react-3-fbV2ZVIGWg)
+- [How to Build a Type-safe GraphQL API using Pothos](https://dev.to/franciscomendes10866/how-to-build-a-type-safe-graphql-api-using-pothos-and-kysely-4ja3)
